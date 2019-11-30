@@ -1,4 +1,4 @@
-package managers;
+package springapp.business;
 
 public interface IqueryManager 
 {
