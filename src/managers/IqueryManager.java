@@ -1,5 +1,7 @@
 package managers;
 
-public interface IqueryManager {
+public interface IqueryManager 
+{
+	public String queryDate();
 
 }
