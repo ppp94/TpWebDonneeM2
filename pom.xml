@@ -27,7 +27,6 @@
 	</build>
 	<properties>
 		<spring.version>5.1.5.RELEASE</spring.version>
-
 	</properties>
 
 	<dependencies>

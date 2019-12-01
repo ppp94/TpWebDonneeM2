@@ -10,6 +10,7 @@ import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
+import org.springframework.core.io.FileSystemResource;
 
 public class fonction 
 {
@@ -17,13 +18,17 @@ public class fonction
 	{
 
 		Model model = ModelFactory.createDefaultModel();
-		InputStream in = FileManager.get().open( "aarhus_parking.ttl" );
+		
+		
+		InputStream in = FileManager.get().open( "/home/ppp94/eclipse-workspace3/WebOfThing/aarhus_parking.ttl" );
+		//FileSystemResource in = new FileSystemResource("file:C:/home/ppp94/eclipse-workspace3/WebOfThing/aarhus_parking.ttl");
 		if (in == null) 
 		{
 			throw new IllegalArgumentException(
 					"File: " + "aarhus_parking.ttl" + " not found");
 		}
 		model.read(in, null,"Turtle");
+		//model.read(in);
 		
 		
 		String queryString= "PREFIX sao: <http://iot.ee.surrey.ac.uk/citypulse/resources/ontologies/sao.ttl>"

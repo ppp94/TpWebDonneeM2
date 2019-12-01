@@ -152,8 +152,9 @@ public class JenaRDF {
 	
 	public static void main(String args[]) {
 		
-		//JenaRDF.fichierParking();
+		JenaRDF.fichierParking();
 		JenaRDF.fichierClimat();
+		
 	}
 	
 	

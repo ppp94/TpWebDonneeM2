@@ -11,7 +11,9 @@ import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
+import org.springframework.stereotype.Service;
 
+@Service("queryManager")
 public class QueryManager implements IqueryManager
 {
 	
